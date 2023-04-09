@@ -16,3 +16,15 @@ def author():
     print('Илья "Te3K@_PaynE" Новичихин')
     print('79811131773@yandex.ru')
 
+print("Программа запрашивает на ввод количество учащихся в трёх разных классах")
+print("Выводит на экран наименьшее количество парт, которое нужно для оборудования всех классов")
+firstClassStudents = int(input("Введите количество учащихся в первом классе = "))
+secondClassStudents = int(input("Введите количество учащихся во втором классе = "))
+thirdClassStudents = int(input("Введите количество учащихся в третьем классе = "))
+
+firstClassTables = (firstClassStudents - 1) // 2 + 1
+secondClassTables = (secondClassStudents - 1) // 2 + 1
+thirdClassTables = (thirdClassStudents - 1) // 2 + 1
+print(f"Общее количество парт = {firstClassTables + secondClassTables + thirdClassTables}")
+
+author()
