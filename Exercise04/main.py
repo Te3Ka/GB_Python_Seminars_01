@@ -17,3 +17,12 @@ def author():
     print('Илья "Te3K@_PaynE" Новичихин')
     print('79811131773@yandex.ru')
     print("****************************")
+
+print("Программа определяет, является ли введённый номер года високосным.")
+year = int(input("Введите номер года: "))
+if ((year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0)):
+    print("YES")
+else:
+    print("NO")
+
+author()
